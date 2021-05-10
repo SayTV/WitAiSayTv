@@ -1,0 +1,42 @@
+body {
+  background-image: url("bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1 {
+  background-color: #cfe9ff;
+  padding: 2.5rem 3rem 2.5rem 3.5rem;
+  margin: 20px 24rem 0rem 0px;
+  /* width: auto; */
+  margin-bottom: 0px;
+  display: inline-block;
+  border-radius: 39px 60px 40px 77px;
+}
+.bubble {
+  background: #cfe9ff;
+  width: 3rem;
+  height: 5rem;
+  display: inline;
+  /* margin: 50px; */
+  position: relative;
+  /* right: 57rem; */
+  bottom: 2rem;
+  /* top: 7rem; */
+  /* left: 38rem; */
+  border-radius: 17px 100% 6px 100%;
+  z-index: -1;
+}
+.top {
+  z-index: 99999;
+}
+.robot{
+  
+  z-index: -2;
+  height: 37rem !important;
+  object-fit: cover;
+}
+.center{
+ margin-top: 9rem!important
+}

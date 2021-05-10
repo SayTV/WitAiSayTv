@@ -1,0 +1,37 @@
+{
+  "name": "TV Ext",
+  "description": "An example chrome extension that injects buttons using jQuery",
+  "version": "0.1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "exclude_matches": [
+        "http://localhost:9997/*",
+        "http://*.facebook.com/*",
+        "https://*.facebook.com/*"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "js": [
+        "jquery.js",
+        "script.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "manifest_version": 2,
+  "icons": {
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+  }
+}

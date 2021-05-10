@@ -1,0 +1,11 @@
+C:\Users\Darawsheh\source\repos\PiWifi\bin\Release\PiWifi.exe
+C:\Users\Darawsheh\source\repos\PiWifi\bin\Release\witemp.txt
+C:\Users\Darawsheh\source\repos\PiWifi\bin\Release\PiWifi.exe.config
+C:\Users\Darawsheh\source\repos\PiWifi\bin\Release\PiWifi.pdb
+C:\Users\Darawsheh\source\repos\PiWifi\obj\Release\PiWifi.Form1.resources
+C:\Users\Darawsheh\source\repos\PiWifi\obj\Release\PiWifi.Properties.Resources.resources
+C:\Users\Darawsheh\source\repos\PiWifi\obj\Release\PiWifi.csproj.GenerateResource.cache
+C:\Users\Darawsheh\source\repos\PiWifi\obj\Release\PiWifi.csproj.CoreCompileInputs.cache
+C:\Users\Darawsheh\source\repos\PiWifi\obj\Release\PiWifi.exe
+C:\Users\Darawsheh\source\repos\PiWifi\obj\Release\PiWifi.pdb
+C:\Users\Darawsheh\source\repos\PiWifi\obj\Release\PiWifi.csprojAssemblyReference.cache

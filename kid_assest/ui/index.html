@@ -1,0 +1,61 @@
+<html>
+    <head>
+
+      <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <div class="col-12 mb-5 center">
+        <div class="text-center top mt-5">
+          <h1 id="Speechlbl" class="top">mef mafyof</h1>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <div class="bubble"></div>
+          <img  id="dispVid" src="happyMofer.gif" class="robot" alt="Bot">
+         
+        </div>
+      </div>
+    
+  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>     
+<script>
+var pullingInter=undefined;
+var pychan_server="http://127.0.0.1:9999/listen";
+window.addEventListener('load', function(event){
+    pullingInter=setInterval(function(){
+      jQuery.get(pychan_server,null,function(resp){
+        try{
+        var data=JSON.parse(resp);
+        
+        if(data.hasMessage){
+          console.log('parsing second');
+          resp=data.message;
+          var msgInfo=data.message.content;
+          console.log(resp);
+          console.log(msgInfo)
+          jQuery("#Speechlbl").text(msgInfo.text);
+          if(msgInfo.vid!=undefined && msgInfo.vid.length>0)
+          {
+            jQuery("#dispVid").attr('src',msgInfo.vid);
+          }
+        }else{
+         // console.log('no text in message '+data.hasMessage);
+          
+        }}catch(er){
+          console.log(er);
+          console.log(resp);
+
+        }
+
+      });
+    },500);
+});
+
+</script>
+    </body>
+</html>

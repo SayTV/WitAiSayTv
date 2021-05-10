@@ -1,0 +1,45 @@
+<html>
+    <head></head>
+    <body>
+        <center>
+            <video id="dispVid" src="roboteye.mp4" muted autoplay>
+            </video>
+            <h1 id="Speechlbl">test</h1>
+        </center>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>     
+<script>
+var pullingInter=undefined;
+var pychan_server="http://127.0.0.1:9999/listen";
+window.addEventListener('load', function(event){
+    pullingInter=setInterval(function(){
+      jQuery.get(pychan_server,null,function(resp){
+        try{
+        var data=JSON.parse(resp);
+        
+        if(data.hasMessage){
+          console.log('parsing second');
+          resp=data.message;
+          var msgInfo=data.message.content;
+          console.log(resp);
+          console.log(msgInfo)
+          jQuery("#Speechlbl").text(msgInfo.text);
+          if(msgInfo.vid!=undefined && msgInfo.vid.length>0)
+          {
+            jQuery("#dispVid").attr('src',msgInfo.vid);
+          }
+        }else{
+         // console.log('no text in message '+data.hasMessage);
+          
+        }}catch(er){
+          console.log(er);
+          console.log(resp);
+
+        }
+
+      });
+    },500);
+});
+
+</script>
+    </body>
+</html>
