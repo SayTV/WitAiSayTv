@@ -109,9 +109,9 @@ https://www.netflix.com/jo-en/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fbro
 *	Say "TV" to ask the robot for another action
 
 ## Developed by 
-Mahmoud Emad Darawsheh
-Alina Sami Abu Siam
-Amr Emad Darawsheh
+* Mahmoud Emad Darawsheh
+* Alina Sami Abu Siam
+* Amr Emad Darawsheh
 
 
 
