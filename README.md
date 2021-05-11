@@ -1,10 +1,14 @@
 # SayTV 
-
+![SayTV Image](/extension/splash.png)
 ## Summary 
 Don't you hate typing with a TV remote control! And going through complex lists? SayTV is your personal TV assistant, just tell your TV!
 
 ## About SayTV
 Most elders find it hard to use new tech, and “the average American over 65 spends about four hours watching TV daily“ SayTV enables using TV's without any trouble, It’s a voice assistant based on Wit.AI to help the elderly interact with new TVs easily, as simple as asking their grandkids to find something for them! We aspire to make life easier for anyone who finds it difficult to use new devices
+
+## Demo Video
+You can watch SayTV's Demo using this link
+https://drive.google.com/file/d/1EliJ6d-sw3KBFHKqqZyCOEU4CyhJIypB/view
 
 
 ## Installation
