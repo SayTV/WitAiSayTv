@@ -1,4 +1,11 @@
-# SayTV
+# SayTV 
+
+## Summary 
+Don't you hate typing with a TV remote control! And going through complex lists? SayTV is your personal TV assistant, just tell your TV!
+
+## About SayTV
+Most elders find it hard to use new tech, and “the average American over 65 spends about four hours watching TV daily“ SayTV enables using TV's without any trouble, It’s a voice assistant based on Wit.AI to help the elderly interact with new TVs easily, as simple as asking their grandkids to find something for them! We aspire to make life easier for anyone who finds it difficult to use new devices
+
 
 ## Installation
 To install our system you can do it using one of the following methods:
@@ -67,8 +74,6 @@ we have also built a tool to help you prepare your pi to get connected to your w
 so you just put it in the boot drive on the SD card, run it enter your ssid and password  and it will order the py to connect to your network when booting.
 It is located in the PiWifi directory from this project.
 
-
-//////
 ### Running the TV
 After running the OS, the robot will be shown on the screen
 1.	Say “TV” on the Microphone
@@ -103,10 +108,10 @@ https://www.netflix.com/jo-en/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fbro
 *	You can say Pause to pause the video, Play to play the video after it has been paused, Exit to stop watching and back to the robot
 *	Say "TV" to ask the robot for another action
 
-
-
-
-
+## Developed by 
+Mahmoud Emad Darawsheh
+Alina Sami Abu Siam
+Amr Emad Darawsheh
 
 
 
