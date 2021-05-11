@@ -47,20 +47,24 @@ Installing
 ### Build the code with the project's files using the Raspberry Pi OS
 Start by installing the Raspian on your raspberry pi, refeere to this link for steps on how to install Raspberry Pi OS https://www.raspberrypi.org/software/
 install **espeak** using this command
-`sudo apt-get install espeak`
+```
+sudo apt-get install espeak
+```
 
 then install **Chromium Widevine** with the following commands
-`sudo apt install libwidevinecdm0
+```
+sudo apt install libwidevinecdm0
 git clone https://github.com/Botspot/pi-apps
-~/pi-apps/install`
+~/pi-apps/install
+```
 Run Pi Apps, from the Raspberry Pi Menu -> Accessories -> Pi Apps
 Then check the **Chromium Widevine** option and install it
 
 Then using pip3 install the python package dependencies for the project using the following commands:
-`
+```
 cd kid_assest
 pip3 install -r requirements.txt
-`
+```
 
 To run the code
 
@@ -72,9 +76,13 @@ We need to install the chrome extention:
 5. Browse and choose the extension directory provided in WitAiSayTv 
 
 move to the kid_assest dir to /home/pi using the following command:
-`cd /home/pi/kid_assest`
+```
+cd /home/pi/kid_assest
+```
 Now you're ready to launch your SayTv
-`python3 dict.py`
+```
+python3 dict.py
+```
 
 we have also built a tool to help you prepare your pi to get connected to your wifi directly called PiWifi
 so you just put it in the boot drive on the SD card, run it enter your ssid and password  and it will order the py to connect to your network when booting.
@@ -93,7 +101,7 @@ You can do the following actions with SayTV OS, say an action, then the action i
 *	Asking for watching a movie on Netflix such as “I want to watch Spiderman on Netflix”
 *	Asking for watching a certain TV channel  such as “I want to watch Jordan TV”
 *	The channels are stored on dictionary found in tv.py file and you can add as much channels as you want
-`
+```
 channels_db={
     "jordan":'https://www.jrtv.gov.jo/live-tv',
     "abc":"https://abcnews.go.com/Live",
@@ -102,7 +110,7 @@ channels_db={
     'sky':'https://www.youtube.com/watch?v=9Auq9mYxFEE&ab_channel=SkyNews',
     'facebook watch':'https://web.facebook.com/watch'
 }
-`
+```
 *	Asking for watching a video on Youtube such as “I want to play Seniorita on Youtube”
 *	Asking for surfing Facebook Watch such as saying “open Facebook Watch”
 
