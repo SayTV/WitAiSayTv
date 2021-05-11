@@ -75,33 +75,34 @@ After running the OS, the robot will be shown on the screen
 1. The chatbot will start speaking to you
 
 #### What you can do
-You can do the following items with SayTV OS, say an action, then the action is taken by the robot, then after processing the command using Wit.ai it will execute it, taking into consideration, that we are not dealing with the streaming service provider directly but instead we are exectuing the action it do the action on behalf of the user using the chrome extension 
--	Asking about the weather such as ”what is the weather today”
--	Asking for watching a movie on Netflix such as “I want to watch Spiderman on Netflix”
--	Asking for watching a certain TV channel  such as “I want to watch Jordan TV”
-o	The channels are stored on dictionary found in tv.py file and you can add as much channels as you want
-channels_db={
+You can do the following actions with SayTV OS, say an action, then the action is taken by the robot, then after processing the command using Wit.ai it will execute it, taking into consideration, that we are not dealing with the streaming service provider directly but instead we are exectuing the action on behalf of the user using the chrome extension.
+##### The actions you do to start watching TV:
+
+*	Asking about the weather such as ”what is the weather today”
+*	Asking for watching a movie on Netflix such as “I want to watch Spiderman on Netflix”
+*	Asking for watching a certain TV channel  such as “I want to watch Jordan TV”
+*	The channels are stored on dictionary found in tv.py file and you can add as much channels as you want
+`channels_db={
     "jordan":'https://www.jrtv.gov.jo/live-tv',
     "abc":"https://abcnews.go.com/Live",
     'jazeera':'https://www.aljazeera.com/live/',
     'bloomberg':'https://www.bloomberg.com/live/us',
     'sky':'https://www.youtube.com/watch?v=9Auq9mYxFEE&ab_channel=SkyNews',
     'facebook watch':'https://web.facebook.com/watch'
-} 
-o	The installed chrome extension is smart enough to understand that there is a video on the page and will play it in fullscreen mode 
--	Asking for watching a video on Youtube such as “I want to play Seniorita on Youtube”
--	Asking for surfing Facebook Watch such as saying “open Facebook Watch”
+}`
+*	Asking for watching a video on Youtube such as “I want to play Seniorita on Youtube”
+*	Asking for surfing Facebook Watch such as saying “open Facebook Watch”
 
-If you want to watch Netflix on the device, please enter to Netflix.com on the browser and login with your account using a USB keyboard so you can use it.
+*If you want to watch Netflix on the device, please enter to Netflix.com on the browser and login with your account using a USB keyboard so you can use it.
 You can login using this link
 https://www.netflix.com/jo-en/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fbrowse
+*
 
-and you can run it on chrome from terminal using the following command
 
+##### Things you can do while watching on the TV
+*	You can say Pause to pause the video, Play to play the video after it has been paused, Exit to stop watching and back to the robot
+*	Say "TV" to ask the robot for another action
 
-Things you can do while watching a playing movie
--	You can say Play, Pause ,Exit 
-o	The os will ask the chrome extension to execute the requested action using WebSockets. 
 
 
 
