@@ -57,8 +57,10 @@ Run Pi Apps, from the Raspberry Pi Menu -> Accessories -> Pi Apps
 Then check the **Chromium Widevine** option and install it
 
 Then using pip3 install the python package dependencies for the project using the following commands:
-`cd kid_assest
-pip3 install -r requirements.txt`
+`
+cd kid_assest
+pip3 install -r requirements.txt
+`
 
 To run the code
 
@@ -91,14 +93,16 @@ You can do the following actions with SayTV OS, say an action, then the action i
 *	Asking for watching a movie on Netflix such as “I want to watch Spiderman on Netflix”
 *	Asking for watching a certain TV channel  such as “I want to watch Jordan TV”
 *	The channels are stored on dictionary found in tv.py file and you can add as much channels as you want
-`channels_db={
+`
+channels_db={
     "jordan":'https://www.jrtv.gov.jo/live-tv',
     "abc":"https://abcnews.go.com/Live",
     'jazeera':'https://www.aljazeera.com/live/',
     'bloomberg':'https://www.bloomberg.com/live/us',
     'sky':'https://www.youtube.com/watch?v=9Auq9mYxFEE&ab_channel=SkyNews',
     'facebook watch':'https://web.facebook.com/watch'
-}`
+}
+`
 *	Asking for watching a video on Youtube such as “I want to play Seniorita on Youtube”
 *	Asking for surfing Facebook Watch such as saying “open Facebook Watch”
 
